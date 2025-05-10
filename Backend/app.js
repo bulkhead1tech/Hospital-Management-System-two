@@ -18,6 +18,7 @@ app.use(cors(
     {
         origin: [process.env.FRONTEND_PATIENT, process.env.FRONTEND_ADMIN],
         methods: ["GET", "POST", "PUT", "DELETE"],
+        allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
         credentials: true
     }
 ))
